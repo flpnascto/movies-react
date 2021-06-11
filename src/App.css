@@ -1,3 +1,9 @@
+.main-container {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
 .App {
   text-align: center;
 }
