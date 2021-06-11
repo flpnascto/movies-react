@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Suno Movies - Teste Frontend ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição do desafio:
+Nesse desafio você deverá desenvolver um portal de filmes, seguindo o layout proposto no [Figma](https://www.figma.com/file/V1Qfp19RorvXZI1qshlLGL/Suno-Movies?node-id=0%3A1).
 
-## Available Scripts
+Sugerimos utilizar a API [MovieDB](https://developers.themoviedb.org/4/getting-started), mas você está livre para escolher qualquer outra, portanto que cumpra com os requisitos.
 
-In the project directory, you can run:
+### Requisitos obrigatórios:
+1. O projeto deverá ser em React;
+2. A aplicação deverá ser responsiva;
+3. Funcionar na última versão dos principais browsers (Chrome, Firefox, Safari e Edge).
+4. É proibido fazer uso de frameworks CSS (Bootstrap, Antd, Material, entre outros).
 
-### `yarn start`
+### Features obrigatórias do projeto:
+1. A aplicação deverá conter uma busca por nome do filme;
+2. Na Navbar da aplicação, o botão "Início" deverá redirecionar para a tela inicial e o botão "Catálogo" deverá ser um link para a seção "Catálogo Completo" (Scroll na página);
+3. Deverá apresentar um Carousel com os filmes mais recentes na base de dados;
+4. A seção de "Catálogo" deverá conter opções de filtro por gênero e popularidade (avaliação do filme);
+5. Também deverá ter a possibilidade de exibição dos cards por lista ou grid. Contendo uma paginação dinâmica;
+6. Ao clicar em um filme, deverá carregar uma nova página contendo a descrição do filme selecionado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Se você fizer, será um diferencial:
+1. Utilização de Typescript;
+2. Estilização com Styled Components ou SASS;
+3. Gerenciamento de estado global (sugestão: Context API).
+4. Utilização de componentes funcionais (Function Components);
+5. Testes unitários (sugestão: Jest + React Testing Library);
+6. Documentação dos componentes (Storybooks, Docz, ou outra opção a escolha do candidato);
+7. Animações e efeitos de transição.
+8. Ter boa performance;
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Considerações finais:
+1. Qualquer dúvida, fique à vontade para entrar em contato. Preferimos candidatos que tiram as dúvidas que surgem.
+2. Não utilize código repetido de outros candidatos que já participaram do processo seletivo.
+3. Na balança entre "prazo" vs. "qualidade", optamos pelo equilíbrio.
