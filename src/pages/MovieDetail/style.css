@@ -1,0 +1,134 @@
+.md-content {
+  align-items: center;
+  background: #1B1B1F;
+  justify-content: center;
+  min-height: calc(100vh - 112px);
+  padding: 0 15%;
+  padding-bottom: 112px;
+  padding-top: 30px;
+}
+
+.md-content-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;  
+}
+
+.md-image {
+  height: 494px;
+  width: 334px;
+  margin-right: 30px;
+}
+
+.md-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-info-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.md-info-bar-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.md-info-title {
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 68px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.md-info-genre {
+  color: #FE3189;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 36px;
+  text-align: left;
+}
+
+.md-info-subtile {
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 34px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.md-info-overview {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+/* font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left; */
+}
+
+.md-info-rating {
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.md-video-title {
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  height: 60px;
+  letter-spacing: 0em;
+  line-height: 41px;
+  margin: 20px 0;
+  text-align: left;
+  border-bottom: 2px solid #FE3189;
+  width: 100%;
+}
+
+.md-video-responsive {
+  height: 0;
+  margin-bottom: 30px;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.md-video-responsive iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
