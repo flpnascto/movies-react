@@ -1,0 +1,60 @@
+.c-mo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 107px;
+  justify-content: space-between;
+  padding: 0 15%;
+}
+
+.c-mo-select {
+  background: linear-gradient(180deg, #212125 0%, #2E2E35 100%), #212125;
+  border: 2px solid #2E2D31;
+  border-radius: 4px;
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 45px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  min-width: 161px;
+}
+
+.c-mo-button-on {
+  background: linear-gradient(180deg, #FE3189 0%, #FE3189 100%), #FE3189;
+  border: 1px solid #FE3189;
+  border-radius: 3.20398px;
+  box-shadow: 0px 0px 6px 0px #FF0772;
+  color: #EAEAEA;
+  filter: drop-shadow(0px 0px 6px #FF0772);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 45px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-left: 20px;
+  text-align: left;
+  width: 161px;
+}
+
+.c-mo-button-off {
+  background: linear-gradient(180deg, #212125 0%, #2E2E35 100%), #212125;
+  border: 2px solid #2E2D31;
+  border-radius: 3.20398px;
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 45px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-left: 20px;
+  text-align: left;
+  width: 161px;
+}

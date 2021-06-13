@@ -1,0 +1,8 @@
+.c-content {
+  align-items: center;
+  background: #1B1B1F;
+  justify-content: center;
+  min-height: calc(100vh - 112px);
+  padding-bottom: 112px;
+  padding-top: 10px;
+}
