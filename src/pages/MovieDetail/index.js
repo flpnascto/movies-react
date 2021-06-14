@@ -29,8 +29,6 @@ function MovieDetail() {
     fetchMovieTrailer();
   }, [setEmbedId, movieId]);
 
-  console.log('movieId: ', movieId)
-  console.log('data:', data);
   if (data.length < 1) return null;
   return (
     <div className="md-content">
@@ -38,6 +36,6 @@ function MovieDetail() {
       { (embedId !== "") && <Trailer embedId={embedId} />}
     </div>
   );
-}
+};
 
 export default MovieDetail;

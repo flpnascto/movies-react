@@ -38,8 +38,9 @@ export async function getMovieTrailer(id) {
   const endpoint = `${URL}movie/${id}/videos?${queryKey}`;
   const requestResponse = await fetch(endpoint)
     .then((response) => response.json())
-    .then((data) => data.results[0].key);
-  return requestResponse;
+    .then((data) => data.results);
+  if (requestResponse.length < 1) return "";
+  return requestResponse[0].key;
 };
 
 export const imgUrl = 'https://image.tmdb.org/t/p/w500';
