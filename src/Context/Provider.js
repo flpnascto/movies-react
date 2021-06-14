@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import MoviesContext from '../Context/MoviesContext';
-import { getMovies } from '../services/tmdbAPI';
+import { getMovies, getGenresList } from '../services/tmdbAPI';
 
 function Provider({ children }) {
   const [catalogPage, setCatalogPage] = useState(1);
   const [filterGenreId, setFilterGenreId] = useState('');
   const [filterPopularity, setFilterPopularity] = useState(false);
   const [movies, setMovies] = useState([]);
+  const [genres, setGenres] = useState([]);
 
   useEffect(() => {
     async function fetchMovies() {
@@ -17,6 +18,13 @@ function Provider({ children }) {
     fetchMovies();
   }, [catalogPage, filterGenreId, filterPopularity]);
 
+  useEffect(() => {
+    async function fetchGenres() {
+      const genresList = await getGenresList();
+      setGenres(genresList);
+    };
+    fetchGenres();
+  }, []);
 
   const contextValue = {
     catalogPage,
@@ -26,6 +34,7 @@ function Provider({ children }) {
     filterPopularity,
     setFilterPopularity,
     movies,
+    genres,
   }
 
   return (
