@@ -3,7 +3,7 @@ const URL = 'https://api.themoviedb.org/3/';
 const queryKey = `api_key=${process.env.REACT_APP_APIKEY}`;
 
 export async function recentMovies() {
-  const endpoint = `${URL}discover/movie?sort_by=release_date.asc&page=1&include_adult=false&include_video=true&primary_release_year=2021&${queryKey}`;
+  const endpoint = `${URL}discover/movie?sort_by=release_date.asc&region=US&page=1&include_adult=false&include_video=true&primary_release_year=2021&${queryKey}`;
   const requestResponse = await fetch(endpoint)
     .then((response) => response.json())
     .then((data) => data.results);
@@ -18,7 +18,7 @@ export async function getMovieDetails(id) {
 };
 
 export async function getMovies(page, genreId, popularity) {
-  let endpoint = `${URL}discover/movie?include_adult=false&include_video=true&page=${page}&with_genres=${genreId}&${queryKey}`;
+  let endpoint = `${URL}discover/movie?include_adult=false&include_video=true&region=US&page=${page}&with_genres=${genreId}&${queryKey}`;
   if (!popularity) endpoint += "&sort_by=original_title.asc";
   const requestResponse = await fetch(endpoint)
     .then((response) => response.json())
