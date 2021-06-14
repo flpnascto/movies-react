@@ -4,9 +4,10 @@ import { getGenresList } from '../../../services/tmdbAPI';
 
 import './style.css';
 
-function MenuOptions() {
+function MenuOptions({ viewSelect }) {
   const [loading, setLoading] = useState(false);
   const [genreList, setGenreList] = useState([]);
+  const [viewType, setViewType] = useState('grid');
   const { filterGenreId, setFilterGenreId, filterPopularity, setFilterPopularity, } = useContext(MoviesContext);
 
   useEffect(() => {
@@ -21,6 +22,11 @@ function MenuOptions() {
 
   const filterByGenre = ({ target }) => {
     setFilterGenreId(target.value);
+  }
+
+  const handleSelectView = ({ target }) => {
+    setViewType(target.value);
+    viewSelect();
   }
 
   if (loading) return (
@@ -52,11 +58,11 @@ function MenuOptions() {
       </div>
       <select
         className="c-mo-select"
-        value=""
-      // onChange={}
+        value={viewType}
+        onChange={(event) => handleSelectView(event)}
       >
-        <option value="">em grid</option>
-        <option value="">em lista</option>
+        <option value="grid">em grid</option>
+        <option value="list">em lista</option>
       </select>
     </div>
   );

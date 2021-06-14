@@ -11,7 +11,7 @@ function ListView() {
 
   return (
     <div className="lv-content">
-      {movies.map((movie) => <MovieCard movie={movie} />)}
+      {movies.map((movie, index) => <MovieCard key={index} movie={movie} />)}
     </div>
   );
 };
