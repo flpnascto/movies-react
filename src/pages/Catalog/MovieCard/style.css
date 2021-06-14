@@ -2,7 +2,15 @@
   display: flex;
   margin-bottom: 20px;
   align-items: flex-start;
+}
 
+.transparent {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
 }
 
 .mc-content {
