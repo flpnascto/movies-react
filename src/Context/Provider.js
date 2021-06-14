@@ -9,6 +9,7 @@ function Provider({ children }) {
   const [filterPopularity, setFilterPopularity] = useState(false);
   const [movies, setMovies] = useState([]);
   const [genres, setGenres] = useState([]);
+  const [viewType, setViewType] = useState(false);
 
   useEffect(() => {
     async function fetchMovies() {
@@ -35,7 +36,9 @@ function Provider({ children }) {
     setFilterPopularity,
     movies,
     genres,
-  }
+    viewType,
+    setViewType,
+  };
 
   return (
     <MoviesContext.Provider value={contextValue} >

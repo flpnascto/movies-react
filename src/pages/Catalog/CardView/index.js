@@ -4,16 +4,18 @@ import MovieCard from '../MovieCard';
 
 import './style.css';
 
-function ListView() {
-  const { movies } = useContext(MoviesContext);
+function CardView() {
+  const { movies, viewType } = useContext(MoviesContext);
+
+  const viewClass = viewType ? "lv-content" : "gv-content";
 
   if (movies.length < 1) return (<div>Loading...</div>)
 
   return (
-    <div className="lv-content">
+    <div className={viewClass}>
       {movies.map((movie, index) => <MovieCard key={index} movie={movie} />)}
     </div>
   );
 };
 
-export default ListView;
+export default CardView;

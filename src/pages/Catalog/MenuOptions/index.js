@@ -7,8 +7,14 @@ import './style.css';
 function MenuOptions({ viewSelect }) {
   const [loading, setLoading] = useState(false);
   const [genreList, setGenreList] = useState([]);
-  const [viewType, setViewType] = useState('grid');
-  const { filterGenreId, setFilterGenreId, filterPopularity, setFilterPopularity, } = useContext(MoviesContext);
+  const {
+    filterGenreId,
+    setFilterGenreId,
+    filterPopularity,
+    setFilterPopularity,
+    viewType,
+    setViewType,
+  } = useContext(MoviesContext);
 
   useEffect(() => {
     setLoading(true);
@@ -22,11 +28,6 @@ function MenuOptions({ viewSelect }) {
 
   const filterByGenre = ({ target }) => {
     setFilterGenreId(target.value);
-  }
-
-  const handleSelectView = ({ target }) => {
-    setViewType(target.value);
-    viewSelect();
   }
 
   if (loading) return (
@@ -59,10 +60,10 @@ function MenuOptions({ viewSelect }) {
       <select
         className="c-mo-select"
         value={viewType}
-        onChange={(event) => handleSelectView(event)}
+        onChange={() => setViewType(!viewType)}
       >
-        <option value="grid">em grid</option>
-        <option value="list">em lista</option>
+        <option value={false}>em grid</option>
+        <option value={true}>em lista</option>
       </select>
     </div>
   );
