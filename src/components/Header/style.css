@@ -1,4 +1,4 @@
-.box-container {
+.header-container {
   align-items: center;
   background: #212125;
   box-shadow: 0px 4px 25px 4px rgba(0, 0, 0, 0.3);
@@ -9,13 +9,12 @@
   padding: 0 15%;
 }
 
-.content {
+.header-content {
   align-items: center;
   display: flex;
 }
 
-.logo-gray {
-  color: #EAEAEA;
+.header-logo {
   font-family: Poppins;
   font-size: 26px;
   font-style: normal;
@@ -25,17 +24,15 @@
   text-transform: uppercase;
 }
 
-.logo-pink {
-  color: #FF559E;
-  font-family: Poppins;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 39px;
-  text-transform: uppercase;
+.header-color-gray {
+  color: #EAEAEA;
 }
 
-.menu-option {
+.header-color-pink {
+  color: #FF559E;
+}
+
+.header-menu-option {
   color: #EAEAEA;
   font-family: Poppins;
   font-size: 16px;
@@ -45,4 +42,10 @@
   margin-right: 40px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.header-content button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

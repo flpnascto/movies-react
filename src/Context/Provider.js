@@ -10,6 +10,7 @@ function Provider({ children }) {
   const [movies, setMovies] = useState([]);
   const [genres, setGenres] = useState([]);
   const [viewType, setViewType] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
 
   useEffect(() => {
     async function fetchMovies() {
@@ -38,6 +39,8 @@ function Provider({ children }) {
     genres,
     viewType,
     setViewType,
+    showSearch,
+    setShowSearch,
   };
 
   return (
