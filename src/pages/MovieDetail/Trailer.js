@@ -5,7 +5,7 @@ import "./style.css";
 
 function Trailer({ embedId }) {
   return (
-    <div>
+    <div className="md-trailer-container">
       <div className="md-video-title">Trailer</div>
       <div className="md-video-responsive">
         <iframe

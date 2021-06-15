@@ -34,6 +34,13 @@ function MovieDetail() {
     <div className="md-content">
       <DetailsCard movie={data} />
       { (embedId !== "") && <Trailer embedId={embedId} />}
+      <button
+        type="button"
+        className="md-button"
+        onClick={() => history.goBack()}
+      >
+        voltar
+      </button>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 .md-content {
-  align-items: center;
+  align-items:center;
   background: #1B1B1F;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: calc(100vh - 112px);
   padding: 0 15%;
@@ -117,6 +119,10 @@ text-align: left; */
   border-bottom: 2px solid #FE3189;
   width: 100%;
 }
+.md-trailer-container {
+
+  width: 100%;
+}
 
 .md-video-responsive {
   height: 0;
@@ -131,4 +137,23 @@ text-align: left; */
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.md-button {
+  background: linear-gradient(180deg, #FE3189 0%, #FE3189 100%), #FE3189;
+  border: 1px solid #FE3189;
+  border-radius: 3.20398px;
+  box-shadow: 0px 0px 6px 0px #FF0772;
+  color: #EAEAEA;
+  filter: drop-shadow(0px 0px 6px #FF0772);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 45px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 161px;
 }
