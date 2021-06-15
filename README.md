@@ -50,7 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## :notebook_with_decorative_cover: Sobre o Projeto
-
+<p align="center">
 <img src="images/screen_shot.png" alt="Logo" width="600" height="400">
 
 React Movies é um software baseado em Web com o objetivo de trazer informações aos  usuários acerca de filmes. Nestas informções estão contidos o `Título`, `Gênero`, `Rating` e `Sinopse` do filme. Além disto pode conter o `Folder` e o `Trailer`.
@@ -103,8 +103,17 @@ Além disto é bom ter um editor para trabalhar com o código como VSCode.
    ```sh
    npm install
    ```
-
-3. Na pasta do repositócio local execute o comando para iniciar a aplicação
+3. Adicionar chave para acesso à API TMDb
+   3.1 Crie uma conta no site (https://www.themoviedb.org/)[https://www.themoviedb.org/]
+   3.2 Acesse sua conta em **configurações**
+   3.3 Acesse no menu esquerdo a seção **API**
+   3.4 Copie a sua chave em **Chave da API (v3 auth)**
+   3.5 Na raiz do repositório local crie um novo arquivo chamado `.env.local`
+   3.6 Abra `.env.local` e adicione a linha, substituindo _<<api_key>>_ pela sua chave (3.4)
+   ```
+   REACT_APP_APIKEY=<<api_key>>
+   ```
+4. Na pasta do repositócio local execute o comando para iniciar a aplicação
    ```sh
    npm start
    ```
