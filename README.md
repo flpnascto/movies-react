@@ -15,11 +15,11 @@
   <p align="center">
     Site de exibição de informações básicas sobre filmes, obtidos a partir da API <a href="https://www.themoviedb.org/">TMDb</a>.
     <br />
-    <a href="https://github.com/flpnascto/movies-react">View Demo</a>
+    <a href="https://react-context-movies.herokuapp.com/">Demonstração</a>
     ·
-    <a href="https://github.com/flpnascto/movies-react/issues">Report Bug</a>
+    <a href="https://github.com/flpnascto/movies-react/issues">Reportar Bug</a>
     ·
-    <a href="https://github.com/flpnascto/movies-react/issues">Request Feature</a>
+    <a href="https://github.com/flpnascto/movies-react/issues">Solicitar Feature</a>
   </p>
 </p>
 
@@ -36,7 +36,7 @@
       </ul>
     </li>
     <li>
-      <a href="#executando-a-aplicação">Executando a aplicação</a>
+      <a href="#arrow_forward-executando-a-aplicação">Executando a aplicação</a>
       <ul>
         <li><a href="#pré-requisitos">Pré-requisitos</a></li>
         <li><a href="#instalação">Instalação</a></li>
@@ -78,9 +78,11 @@ Este projeto foi desenvolvido para o desafio técnido da [Suno Research](https:/
 Layout base disponível no [Figma](https://www.figma.com/file/V1Qfp19RorvXZI1qshlLGL/Suno-Movies?node-id=0%3A1)
 
 <!-- GETTING STARTED -->
-## Executando a aplicação
+## :arrow_forward: Executando a aplicação
 
-Para executar a aplicação localmente siga as instruções abaixo
+Para executar a aplicação localmente siga as instruções abaixo.
+
+Obs.: a aplicação se encontra em deploy no site [https://react-context-movies.herokuapp.com/](https://react-context-movies.herokuapp.com/)
 
 ### Pré-requisitos
 
@@ -104,15 +106,15 @@ Além disto é bom ter um editor para trabalhar com o código como VSCode.
    npm install
    ```
 3. Adicionar chave para acesso à API TMDb
-   3.1 Crie uma conta no site (https://www.themoviedb.org/)[https://www.themoviedb.org/]
-   3.2 Acesse sua conta em **configurações**
-   3.3 Acesse no menu esquerdo a seção **API**
-   3.4 Copie a sua chave em **Chave da API (v3 auth)**
-   3.5 Na raiz do repositório local crie um novo arquivo chamado `.env.local`
-   3.6 Abra `.env.local` e adicione a linha, substituindo _<<api_key>>_ pela sua chave (3.4)
-   ```
-   REACT_APP_APIKEY=<<api_key>>
-   ```
+     1. Crie uma conta no site (https://www.themoviedb.org/)[https://www.themoviedb.org/]
+     2. Acesse sua conta em **configurações**
+     3. Acesse no menu esquerdo a seção **API**
+     4. Copie a sua chave em **Chave da API (v3 auth)**
+     5. Na raiz do repositório local crie um novo arquivo chamado `.env.local`
+     6. Abra `.env.local` e adicione a linha, substituindo _<<api_key>>_ pela sua chave (3.4)
+     ```
+     REACT_APP_APIKEY=<<api_key>>
+     ```
 4. Na pasta do repositócio local execute o comando para iniciar a aplicação
    ```sh
    npm start
