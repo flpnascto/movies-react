@@ -6,3 +6,23 @@
   padding-bottom: 112px;
   padding-top: 10px;
 }
+
+.c-button {
+  background: linear-gradient(180deg, #FE3189 0%, #FE3189 100%), #FE3189;
+  border: 1px solid #FE3189;
+  border-radius: 3.20398px;
+  box-shadow: 0px 0px 6px 0px #FF0772;
+  color: #EAEAEA;
+  filter: drop-shadow(0px 0px 6px #FF0772);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  height: 45px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  margin-bottom: 30px;
+  margin-left: calc(50vw - 80.5px);;
+  text-align: center;
+  width: 161px;
+}
