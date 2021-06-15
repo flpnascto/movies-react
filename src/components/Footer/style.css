@@ -1,0 +1,20 @@
+.footer-container {
+  align-items: center;
+  background: #212125;
+  display: flex;
+  height: 112px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-text {
+  color: #EAEAEA;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+  text-transform: capitalize;
+}
