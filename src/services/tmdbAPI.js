@@ -43,4 +43,17 @@ export async function getMovieTrailer(id) {
   return requestResponse[0].key;
 };
 
+// https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&query=teste&page=1&include_adult=false
+export async function searchMovies(keywords) {
+  const endpoint = `${URL}search/movie?include_adult=false&include_video=true&region=US&page=1&query=${keywords}&${queryKey}`;
+  console.log('endpoint', endpoint);
+  const requestResponse = await fetch(endpoint)
+    .then((response) => response.json())
+    .then((data) => data.results);
+  // if (requestResponse.length < 1) return "";
+  // return requestResponse[0].key;
+  console.log('api', requestResponse);
+  return requestResponse;
+}
+
 export const imgUrl = 'https://image.tmdb.org/t/p/w500';
