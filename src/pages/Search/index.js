@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import MoviesContext from '../../Context/MoviesContext';
 import { searchMovies } from '../../services/tmdbAPI';
 import MovieCardSearch from './MovieCardSearch';
@@ -11,21 +11,19 @@ function Search() {
     ? "search search-display-block"
     : "search search-display-none";
 
-  const [searchKeyword, setSearchKeyword] = useState('');
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const handleSearch = ({ target }) => {
-    if (target.value.length > 3)
-      setSearchKeyword(target.value);
+  const handleSearch = async ({ target }) => {
+    setLoading(true);
+    if (target.value.length > 3) {
+      const response = await searchMovies(target.value);
+      setMovies(response);
+      setLoading(false);
+    }
   }
 
-  useEffect(() => {
-    async function fetchMovies() {
-      const response = await searchMovies(searchKeyword);
-      setMovies(response);
-    };
-    fetchMovies();
-  }, [searchKeyword]);
+  if (!showSearch) return null;
 
   return (
     <div className={searchClass}>
@@ -35,9 +33,12 @@ function Search() {
           className="search-input"
           onChange={(event) => handleSearch(event)}
         />
-        <div className="search-results">
-          {movies.map((movie, index) => <MovieCardSearch key={index} movie={movie} />)}
-        </div>
+        {!loading && (
+          <div className="search-results">
+            {movies.map((movie, index) => <MovieCardSearch key={index} movie={movie} />)}
+          </div>
+        )}
+
       </div>
     </div>
   )

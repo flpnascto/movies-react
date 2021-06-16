@@ -39,6 +39,10 @@
   text-align: left;
 }
 
+.search-input:focus {
+  outline: none;
+}
+
 .search-results {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
