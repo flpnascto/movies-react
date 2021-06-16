@@ -43,4 +43,13 @@ export async function getMovieTrailer(id) {
   return requestResponse[0].key;
 };
 
+export async function searchMovies(keywords) {
+  if (keywords.length < 3) return [];
+  const endpoint = `${URL}search/movie?include_adult=false&include_video=true&region=US&page=1&query=${keywords}&${queryKey}`;
+  const requestResponse = await fetch(endpoint)
+    .then((response) => response.json())
+    .then((data) => data.results);
+  return requestResponse;
+}
+
 export const imgUrl = 'https://image.tmdb.org/t/p/w500';

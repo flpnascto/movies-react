@@ -32,6 +32,7 @@
       <ul>
         <li><a href="#sparkles-funcionalidades">Funcionalidades</a></li>
         <li><a href="#computer-tecnologias-aplicadas">Tecnologias Aplicadas</a></li>
+        <li><a href="#book-bibliotecas">Bibliotecas</a></li>
         <li><a href="#art-layout">Layout Base</a></li>
       </ul>
     </li>
@@ -53,9 +54,9 @@
 <p align="center">
 <img src="images/screen_shot.png" alt="Logo" width="600" height="400">
 
-React Movies é um software baseado em Web com o objetivo de trazer informações aos  usuários acerca de filmes. Nestas informções estão contidos o `Título`, `Gênero`, `Rating` e `Sinopse` do filme. Além disto pode conter o `Folder` e o `Trailer`.
+React Movies é um software baseado em Web com o objetivo de trazer informações aos  usuários acerca de filmes. Nestas informações estão contidos o `Título`, `Gênero`, `Rating` e `Sinopse` do filme. Além disto pode conter o `Poster` e o `Trailer`.
 
-Esta informações são obtidas através de requisições à API The Movie DB.
+Estas informações são obtidas através de requisições à API The Movie DB.
 
 Este projeto foi desenvolvido para o desafio técnido da [Suno Research](https://www.suno.com.br/). Verifique a [documentação](./challenge_description.md).
 
@@ -64,7 +65,7 @@ Este projeto foi desenvolvido para o desafio técnido da [Suno Research](https:/
 - Catálogo de filmes com exibição em lista ou coluna
 - Página de detalhes do filme, com trailer (se existir)
 - Filtrar catálogo de filmes por gênero
-- Ordenação catálogo de filmes por melhor avaliação
+- Ordenação do catálogo de filmes por mais popular(default) ou melhor avaliação
 
 ### :computer: Tecnologias Aplicadas
 
@@ -74,15 +75,19 @@ Este projeto foi desenvolvido para o desafio técnido da [Suno Research](https:/
 * React
 * Context API
 
+### :book: Bibliotecas
+
+* React Slick (Carousel). [docs](https://react-slick.neostack.com/docs/get-started)
+
 ### :art: Layout
-Layout base disponível no [Figma](https://www.figma.com/file/V1Qfp19RorvXZI1qshlLGL/Suno-Movies?node-id=0%3A1)
+Layout base disponível no [Figma](https://www.figma.com/file/V1Qfp19RorvXZI1qshlLGL/Suno-Movies?node-id=0%3A1).
 
 <!-- GETTING STARTED -->
 ## :arrow_forward: Executando a aplicação
 
 Para executar a aplicação localmente siga as instruções abaixo.
 
-Obs.: a aplicação se encontra em deploy no site [https://react-context-movies.herokuapp.com/](https://react-context-movies.herokuapp.com/)
+Obs.: a aplicação se encontra em deploy no site [https://react-context-movies.herokuapp.com/](https://react-context-movies.herokuapp.com/). _Lembrando que devido a configuração **Hibernate** do Heroku, o primeiro acesso poderá levar um longo tempo_.
 
 ### Pré-requisitos
 
@@ -106,25 +111,29 @@ Além disto é bom ter um editor para trabalhar com o código como VSCode.
    npm install
    ```
 3. Adicionar chave para acesso à API TMDb
-     1. Crie uma conta no site (https://www.themoviedb.org/)[https://www.themoviedb.org/]
+     1. Crie uma conta no site [https://www.themoviedb.org/](https://www.themoviedb.org/)
      2. Acesse sua conta em **configurações**
      3. Acesse no menu esquerdo a seção **API**
      4. Copie a sua chave em **Chave da API (v3 auth)**
      5. Na raiz do repositório local crie um novo arquivo chamado `.env.local`
      6. Abra `.env.local` e adicione a linha, substituindo _<<api_key>>_ pela sua chave (3.4)
+
      ```
      REACT_APP_APIKEY=<<api_key>>
      ```
+
 4. Na pasta do repositócio local execute o comando para iniciar a aplicação
+
    ```sh
    npm start
    ```
+
 <!-- USAGE EXAMPLES -->
 <!-- ROADMAP -->
 <!-- CONTRIBUTING -->
 ## :handshake: Contribuição
 
-As contribuições são o que tornam a comunidade open source um lugar incrível para aprender, inspirar e criar. :rocket: Juntos vamos mais longe.
+As contribuições são o que tornam a comunidade open source um lugar incrível para aprender, inspirar e criar. Juntos vamos mais longe :rocket:.
 Sinta-se a vontade para sugerir melhorias e compartilhar o conhecimento.
 
 1. Fork o projeto

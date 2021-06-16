@@ -1,16 +1,14 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-
-.cc-content {
-  padding: 0 15%;
-  min-height: 473px;
-}
-
-.cc-mc-content {
+.s-mc-container {
+  background-color: #252529;
+  border: 1px solid #313136;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
   align-items: center;
-  background: #1B1B1F;
-  justify-content: left;
-  max-width: 220px;
+  height: 170px;
+  width: 280px;
+  padding: 10px;
 }
 
 .transparent {
@@ -22,12 +20,19 @@
   outline:none;
 }
 
-.cc-mc-image {
-  height: 328px;
-  width: 218px;
+.s-mc-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  max-height: 250px;
 }
 
-.cc-mc-title {
+.s-mc-image {
+  height: 147px;
+  width: 98px;
+}
+
+.s-mc-title {
   color: #EAEAEA;
   font-family: Poppins;
   font-size: 22px;
@@ -38,7 +43,7 @@
   text-align: left;
 }
 
-.cc-mc-genre {
+.s-mc-genre {
   color: #FE3189;
   font-family: Poppins;
   font-size: 16px;
@@ -49,17 +54,18 @@
   text-align: left;
 }
 
-.cc-mc-bar-rating {
+.s-mc-bar-rating {
   display: flex;
   flex-direction: row;
+  margin: 10px 0;
 }
 
-.cc-mc-bar-rating img {
-  height: 23px;
-  width: 23px;
+.s-mc-bar-rating img {
+  height: 18px;
+  width: 18px;
 }
 
-.cc-mc-rating {
+.s-mc-rating {
   color: #EAEAEA;
   font-family: Poppins;
   font-size: 16px;
@@ -67,6 +73,6 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  margin-left: 5px;
+  margin-left: 10px;
   text-align: left;
 }
